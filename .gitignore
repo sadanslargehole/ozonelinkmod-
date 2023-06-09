@@ -12,7 +12,7 @@ out
 *.iws
 *.iml
 .idea
-
+src\main\resources\config.json
 # gradle
 build
 .gradle
@@ -20,7 +20,7 @@ build
 # other
 eclipse
 run
-
+.vscode
 # Files from Forge MDK
 forge*changelog.txt
 *.zip

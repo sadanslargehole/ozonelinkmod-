@@ -1,7 +1,8 @@
 buildscript {
     repositories {
-        maven { url = 'https://maven.minecraftforge.net/' }
         mavenCentral()
+        maven { url = 'https://maven.minecraftforge.net/' }
+
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
@@ -60,14 +61,13 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
-    implementation 'com.google.code.gson:gson:2.10.1'
-    implementation("com.discord4j:discord4j-core:3.2.4")
-    implementation 'net.dv8tion:JDA:5.0.0-beta.9'
-    implementation 'club.minnced:discord-webhooks:0.8.2'
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"
-
+    compile 'com.google.code.gson:gson:2.10.1'
+    compile("com.discord4j:discord4j-core:3.2.4")
+    compile 'net.dv8tion:JDA:5.0.0-beta.9'
+    compile "club.minnced:discord-webhooks:0.8.2"
     // Real examples
     // compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     // compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env

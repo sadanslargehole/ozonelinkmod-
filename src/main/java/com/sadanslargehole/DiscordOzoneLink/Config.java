@@ -8,5 +8,7 @@ public class Config {
     public String token;
     public Long owner;
     public String prefix;
+    public String serverPicture;
+    public String serverName;
 
 }

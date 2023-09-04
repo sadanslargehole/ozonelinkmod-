@@ -1,7 +1,6 @@
 package com.sadanslargehole.DiscordOzoneLink;
 
 import com.google.gson.Gson;
-import com.sadanslargehole.DiscordOzoneLink.Config;
 import com.sadanslargehole.DiscordOzoneLink.discord.Discord;
 import com.sadanslargehole.DiscordOzoneLink.util.webhookWrapper;
 import net.dv8tion.jda.api.entities.Activity;
@@ -63,7 +62,6 @@ public class DiscordOzoneLink
     }
     @EventHandler
     public void starting(FMLServerStartingEvent e){
-        com.sadanslargehole.DiscordOzoneLink.commands.registerCommands.starting(e);
 
     }
     @EventHandler
